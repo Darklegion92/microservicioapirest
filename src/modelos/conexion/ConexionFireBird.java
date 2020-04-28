@@ -8,7 +8,7 @@ public class ConexionFireBird {
     String URL = "jdbc:firebirdsql:192.168.1.100/3050:c:/sysplus/Datos/001/sysplus.fdb?lc_ctype=ISO8859_1";
     //String URL = "jdbc:firebirdsql:localhost/3050:D:\\SYSplus\\Datos\\PRU\\sysplus.fdb?lc_ctype=ISO8859_1";
     String Usuario = "apirest";
-    String Contraseña = "ApiEenezer";
+    String Contraseña = "ApiEbene";
     String Driver = "org.firebirdsql.jdbc.FBDriver";
     Connection con;
     
