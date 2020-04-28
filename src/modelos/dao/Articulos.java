@@ -63,7 +63,7 @@ public class Articulos {
 				"descuentoArticulo="+miArticulo.getDescuento()+", " + 
 				"cantidadArticulo = "+miArticulo.getCantidad()+", " + 
 				"idMarca = '"+miArticulo.getIdMarca()+"', " + 
-				"idFamilia = '"+miArticulo.getIdFamilia()+"'', " + 
+				"idFamilia = '"+miArticulo.getIdFamilia()+"', " + 
 				"idGrupo = '"+miArticulo.getIdGrupo()+"' "+ 
 				"WHERE idarticulo = '"+miArticulo.getCodigo()+"'";
 		statement=connection.prepareStatement(consulta);
