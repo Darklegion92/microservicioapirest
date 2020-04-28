@@ -10,7 +10,7 @@ public class Conexion {
 	private String password = "Domicilios83731";*/
 	private String usuario = "root";
 	private String password = "1234";
-	private String url = "jdbc:mysql://localhost:3306/" + nombreBd;
+	private String url = "jdbc:mysql://127.0.0.1:3306/" + nombreBd;
 
 	Connection conn = null; // creamos un objeto de tipo conexion
 

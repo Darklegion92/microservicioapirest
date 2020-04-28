@@ -58,14 +58,14 @@ public class Articulos {
 		PreparedStatement statement = null;
 		String consulta="UPDATE `apirest`.`articulos` " + 
 				"SET " + 
-				"nombreArticulo ='"+miArticulo.getNombre()+"', "+ 
+				"nombreArticulo ='"+miArticulo.getNombre().replaceAll("'", "")+"', "+ 
 				"`precioArticulo` ="+miArticulo.getPrecio()+", " +  
 				"`descuentoArticulo`="+miArticulo.getDescuento()+", " + 
 				"`cantidadArticulo` = "+miArticulo.getCantidad()+", " + 
 				"`idMarca` = '"+miArticulo.getIdMarca()+"', " + 
 				"`idFamilia` = '"+miArticulo.getIdFamilia()+"'', " + 
 				"`idGrupo` = '"+miArticulo.getIdGrupo()+"' "+ 
-				"WHERE `idarticulo` = '"+miArticulo.getCodigo()+"'";
+				"WHERE `idarticulo` = '"+miArticulo.getCodigo().replaceAll("'", "")+"'";
 		statement=connection.prepareStatement(consulta);
 		statement.execute();
 	}
