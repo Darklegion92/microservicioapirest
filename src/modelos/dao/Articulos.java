@@ -60,12 +60,12 @@ public class Articulos {
 				"SET " + 
 				"nombreArticulo ='"+miArticulo.getNombre()+"', "+ 
 				"precioArticulo ="+miArticulo.getPrecio()+", " +  
-				"descuentoArticulo`="+miArticulo.getDescuento()+", " + 
+				"descuentoArticulo="+miArticulo.getDescuento()+", " + 
 				"cantidadArticulo = "+miArticulo.getCantidad()+", " + 
 				"idMarca = '"+miArticulo.getIdMarca()+"', " + 
 				"idFamilia = '"+miArticulo.getIdFamilia()+"'', " + 
 				"idGrupo = '"+miArticulo.getIdGrupo()+"' "+ 
-				"WHERE `idarticulo` = '"+miArticulo.getCodigo()+"'";
+				"WHERE idarticulo = '"+miArticulo.getCodigo()+"'";
 		statement=connection.prepareStatement(consulta);
 		System.err.println(consulta);
 		statement.execute();
