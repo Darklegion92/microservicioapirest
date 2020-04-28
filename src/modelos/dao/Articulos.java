@@ -33,7 +33,7 @@ public class Articulos {
 		SimpleDateFormat df = new SimpleDateFormat("yyyy/MM/dd");
 		String consulta = "select a.arti_cod, a.arti_des, a.fain_cod, a.marc_cod, a.grin_cod, "
 				+ "p.prar_fijo, p.prar_dto1 from articulo a, precios_articulo p "
-				+ "where p.arti_cod = a.arti_cod and p.lipr_cod = 1 and arti_fecha>='"+df.format(fecha)+"'";
+				+ "where p.arti_cod = a.arti_cod and p.lipr_cod = 1 and arti_fecha>='2019/10/01'";
 		statement = connection.prepareStatement(consulta);
 		resultado = statement.executeQuery();
 		while (resultado.next()== true) {
@@ -67,7 +67,6 @@ public class Articulos {
 				"idGrupo = '"+miArticulo.getIdGrupo()+"' "+ 
 				"WHERE idarticulo = '"+miArticulo.getCodigo()+"'";
 		statement=connection.prepareStatement(consulta);
-		System.err.println(consulta);
 		statement.execute();
 	}
 	

@@ -30,10 +30,7 @@ public class PuntosClietnes {
 		String consulta = "select sum(ptcl_db), p.ptcl_nit from puntos_cliente p group by p.ptcl_nit";
 		statement = connection.prepareStatement(consulta);
 		resultado = statement.executeQuery();
-		int i = 0;
 		while (resultado.next()== true) {
-			i++;
-			System.err.println(i);
 			PuntosCliente miPuntosCliente= new PuntosCliente();
 			miPuntosCliente.setAcumulado(resultado.getInt("sum"));
 			miPuntosCliente.setDocumento(resultado.getString("ptcl_nit"));
