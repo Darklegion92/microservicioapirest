@@ -56,7 +56,7 @@ public class Articulos {
 	private void actualizar(Articulo miArticulo) throws SQLException {
 		Connection connection=miCoordinador.getConnectionMysql(); //instancio la clase conexion
 		PreparedStatement statement = null;
-		String consulta="UPDATE `apirest`.`articulos` " + 
+		String consulta="UPDATE articulos " + 
 				"SET " + 
 				"nombreArticulo ='"+miArticulo.getNombre()+"', "+ 
 				"precioArticulo ="+miArticulo.getPrecio()+", " +  
