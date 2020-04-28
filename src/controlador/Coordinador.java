@@ -38,7 +38,7 @@ public class Coordinador {
 		misArticulos = new Articulos();
 		misPuntosClietnes = new PuntosClietnes();
 
-		miConexionFireBird = new ConexionFireBird("sysdba", "masterkey");
+		miConexionFireBird = new ConexionFireBird();
 		miConexionMysql = new Conexion();
 
 		misFamilias.setMiCoordinador(this);

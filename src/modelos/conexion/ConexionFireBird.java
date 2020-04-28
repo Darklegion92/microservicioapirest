@@ -30,7 +30,7 @@ public class ConexionFireBird {
                 
             }
     }
-    public ConexionFireBird(String Usuario, String Contraseña){
+    public ConexionFireBird(){
         con = null;
          //Realizar conexion
      try {
